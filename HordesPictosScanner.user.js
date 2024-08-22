@@ -9,8 +9,8 @@
 // @match        https://myhordes.de/*
 // @match        https://myhordes.eu/*
 // @match        https://myhord.es/*
-// @updateURL    https://github.com/Croaaa/HordesPictosScanner/raw/master/HordesPictosScanner.user.js
-// @downloadURL  https://github.com/Croaaa/HordesPictosScanner/raw/master/HordesPictosScanner.user.js
+// @updateURL    https://github.com/Croaaa/HordesPictosScanner/raw/main/HordesPictosScanner.user.js
+// @downloadURL  https://github.com/Croaaa/HordesPictosScanner/raw/main/HordesPictosScanner.user.js
 // @grant        none
 // ==/UserScript==
 
