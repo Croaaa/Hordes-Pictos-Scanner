@@ -498,7 +498,7 @@
         scanImage.style.width = '18px';
         scanImage.style.height = '18px';
         scanImage.style.marginTop = '2px';
-        scanImage.style.marginLeft = '8px';
+        scanImage.style.marginLeft = '6px';
         scanButton.style.transition = 'outline-color 0s';
         scanButton.appendChild(scanImage);
 
