@@ -3,7 +3,7 @@
 // @description  Ce script permet de scanner n'importe quelle âme pour y récupérer les valeurs de pictos choisis.
 // @icon         https://myhordes.fr/build/images/emotes/exploration.3c1e616f.gif
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @author       Eliam
 // @match        https://myhordes.fr/*
 // @match        https://myhordes.de/*
