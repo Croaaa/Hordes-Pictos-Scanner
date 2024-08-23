@@ -154,17 +154,18 @@
     // *************************************************************************************************** //
 
     // Fonction pour extraire l'ID et le nom du joueur.
+    // Fonction pour extraire l'ID et le nom du joueur.
     function getPlayerInfo() {
-        const isSelfPage = window.location.pathname.includes('/jx/soul/me');
-        const usernameElement = document.querySelector('.soul-name .username');
+        const distinctionsElement = document.querySelector('hordes-distinctions');
+        const playerId = distinctionsElement ? distinctionsElement.getAttribute('data-user') : null;
 
-        if (usernameElement) {
-            const playerId = isSelfPage ? '0' : usernameElement.getAttribute('x-user-id');
-            const playerName = usernameElement.textContent.trim();
-            return { playerId, playerName };
-        }
-        return { playerId: null, playerName: null };
+        // Le nom du joueur est récupéré comme avant
+        const usernameElement = document.querySelector('.soul-name .username');
+        const playerName = usernameElement ? usernameElement.textContent.trim() : null;
+
+        return { playerId, playerName };
     }
+
 
     // Fonction pour sauvegarder l'état des pictos et des catégories dans localStorage.
     function saveSettings() {
@@ -675,13 +676,15 @@
         // Conteneur pour le tableau défilant
         const tableWrapper = document.createElement('div');
         tableWrapper.style.display = 'block';
+        tableWrapper.style.justifyContent = 'center';
         tableWrapper.style.overflow = 'auto';
         tableWrapper.style.height = '495px';
         tableWrapper.style.width = '100%';
 
         const table = document.createElement('table');
         table.style.borderCollapse = 'collapse';
-        table.style.width = '100%';
+        table.style.margin = '0 auto';
+        //table.style.width = '100%';
 
         const savedState = JSON.parse(localStorage.getItem('pictosState')) || { pictoStates: {} };
         const sortedPictoData = pictoData
