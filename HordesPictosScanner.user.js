@@ -154,7 +154,6 @@
     // *************************************************************************************************** //
 
     // Fonction pour extraire l'ID et le nom du joueur.
-    // Fonction pour extraire l'ID et le nom du joueur.
     function getPlayerInfo() {
         const distinctionsElement = document.querySelector('hordes-distinctions');
         const playerId = distinctionsElement ? distinctionsElement.getAttribute('data-user') : null;
