@@ -3,7 +3,7 @@
 // @description  Ce script permet de scanner n'importe quelle âme pour y récupérer les valeurs de pictos choisis.
 // @icon         https://myhordes.fr/build/images/emotes/exploration.3c1e616f.gif
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.6
 // @author       Eliam
 // @match        https://myhordes.fr/*
 // @match        https://myhordes.de/*
@@ -992,7 +992,7 @@
 
     // Ajoute les boutons principaux à l'interface si ce n'est pas déjà fait.
     function addScannerButton() {
-        const container = document.querySelector('.cell.rw-5.rw-sm-12.center');
+        const container = document.querySelector('row.soul .cell.rw-5.rw-sm-12.center');
         if (container && !document.querySelector('#pictos-scanner-button')) {
             const mainButton = createMainButton();
             const scanButton = createScanButton();
